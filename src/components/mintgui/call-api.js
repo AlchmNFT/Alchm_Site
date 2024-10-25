@@ -41,8 +41,8 @@ export async function callAPI(keyName, params) {
     // Discord
     if (keyName === 'DISCORD') {
         
-        //const API_key = process.env.DISCORD_BOT_TOKEN;
-        const API_key = DISCORD_BOT_TOKEN;
+        const API_key = process.env.DISCORD_BOT_TOKEN;
+        //const API_key = DISCORD_BOT_TOKEN;
         console.log("API Key: ", API_key);
         
         const recipient_discord_ID = params['recipient_discord_ID'];
